@@ -10,7 +10,7 @@ on:
 
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
     # checkout the repo
@@ -31,6 +31,6 @@ jobs:
       with:
         app-name: PremiumWeb
         slot-name: Production
-        publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A90F1F8814564F59A8D8BBDAF8CFA713 }}
+        publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_3DB345E2FC4E4113B72969380A4007A5 }}
         package: ${{ github.workspace }}/target/*.war
 
